@@ -1,0 +1,17 @@
+secret_word= "Akash"
+guess=""
+guess_count=0
+guess_limit=int(input("No of Chances: "))
+out_of_guess=False
+
+
+while guess != secret_word and not (out_of_guess):
+    if guess_count<guess_limit:
+        guess= input("enter the guesses: ")
+        guess_count +=1
+    else:
+        out_of_guess= True
+if out_of_guess:
+        print("out_of_guess,you lose ")
+else:
+        print("you win")
